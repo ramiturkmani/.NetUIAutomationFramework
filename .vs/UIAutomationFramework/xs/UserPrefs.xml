@@ -1,11 +1,6 @@
-﻿<Properties StartupConfiguration="{68C5CC06-3438-4227-A828-F702DF56A6B4}|Default">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{68C5CC06-3438-4227-A828-F702DF56A6B4}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.UIAutomationFramework PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="UIAutomationFramework/UnitTest1.cs">
     <Files>
       <File FileName="UIAutomationFramework/UnitTest1.cs" Line="3" Column="1" />
@@ -30,4 +25,7 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.UIAutomationFramework PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
 </Properties>
