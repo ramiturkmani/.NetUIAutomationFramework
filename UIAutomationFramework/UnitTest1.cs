@@ -15,7 +15,6 @@ public class TGHeaderTests
         driver = new ChromeDriver();
         driver.Manage().Window.Maximize();
         driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
-
         driver.Navigate().GoToUrl("https://techglobal-training.com/");
     }
 
@@ -23,7 +22,6 @@ public class TGHeaderTests
     public void TearDown()
     {
         Thread.Sleep(3000); //3 Seconds
-
         driver.Quit();
     }
 
@@ -38,7 +36,6 @@ public class TGHeaderTests
     public void ValidateTGHeader()
     {
         IWebElement heading = driver.FindElement(By.CssSelector(".HomePage_pageTitle__UAMbk"));
-
         Assert.True(heading.Displayed);
         Assert.AreEqual(heading.Text, "Welcome to TechGlobal School\nTraining");
     }
