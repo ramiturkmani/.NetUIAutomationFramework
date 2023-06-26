@@ -11,6 +11,7 @@ public class TGHeaderTests : Base
     public void ValidateTGLogo()
     {
         IWebElement logo = driver.FindElement(By.Id("logo"));
+        Thread.Sleep(1000);
         Assert.True(logo.Displayed);
     }
 
