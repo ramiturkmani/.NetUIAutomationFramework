@@ -1,26 +1,36 @@
 ﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{68C5CC06-3438-4227-A828-F702DF56A6B4}|Default">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="UIAutomationFramework/UnitTest1.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="UIAutomationFramework/Scripts/BaseTest.cs">
     <Files>
-      <File FileName="UIAutomationFramework/UnitTest1.cs" Line="3" Column="1" />
+      <File FileName="UIAutomationFramework/Base.cs" Line="1" Column="14" />
+      <File FileName="UIAutomationFramework/UnitTest1.cs" Line="25" Column="2" />
+      <File FileName="UIAutomationFramework/TGFooterClass.cs" Line="31" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="UIAutomationFramework" expanded="True">
-            <Node name="UIAutomationFramework" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" expanded="True" />
+          <Node name="UIAutomationFramework">
+            <Node name="UIAutomationFramework">
+              <Node name="Scripts" expanded="True">
+                <Node name="BaseTest.cs" selected="True" />
               </Node>
-              <Node name="UnitTest1.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
         <State name="__root__">
-          <Node name="UIAutomationFramework" selected="True" />
+          <Node name="UIAutomationFramework" selected="True">
+            <Node name="UIAutomationFramework" expanded="True">
+              <Node name="UIAutomationFramework" expanded="True">
+                <Node name="TGFooterClass" expanded="True" />
+                <Node name="TGHeaderTests" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>
