@@ -1,12 +1,12 @@
 ﻿using System;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using UIAutomationFramework.EnvironmentConfiguration;
 
-namespace UIAutomationFramework
+namespace UIAutomationFramework.Scripts
 {
-	public class Base
-	{
-        public IWebDriver driver;
+    public class BaseTest : EnvirontmentSettings
+    {
 
         [SetUp]
         public void Setup()

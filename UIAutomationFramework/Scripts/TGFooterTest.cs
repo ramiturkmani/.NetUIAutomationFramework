@@ -1,11 +1,12 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 
-namespace UIAutomationFramework
+
+namespace UIAutomationFramework.Scripts
 {
     [TestFixture]
-	public class TGFooterClass : Base
-	{
+    public class TGFooterClass : BaseTest
+    {
         [Test]
         public void ValidateTGFooter()
         {
@@ -20,7 +21,7 @@ namespace UIAutomationFramework
             Assert.That(copyright.Displayed);
             Assert.That(copyright.Text.Equals("© 2023 TechGlobal - All Rights Reserved"));
 
-            foreach(IWebElement element in socialMediaElements)
+            foreach (IWebElement element in socialMediaElements)
             {
                 Assert.That(element.Displayed);
                 Assert.That(element.Enabled);

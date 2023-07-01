@@ -2,24 +2,25 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 
-namespace UIAutomationFramework;
 
-[TestFixture]
-public class TGHeaderTests : Base
+namespace UIAutomationFramework.Scripts
 {
-    [Test]
-    public void ValidateTGLogo()
+    [TestFixture]
+    public class TGHeaderTests : BaseTest
     {
-        IWebElement logo = driver.FindElement(By.Id("logo"));
-        Thread.Sleep(1000);
-        Assert.True(logo.Displayed);
-    }
+        [Test]
+        public void ValidateTGLogo()
+        {
+            Thread.Sleep(1000);
+            Assert.True(logo.Displayed);
+        }
 
-    [Test]
-    public void ValidateTGHeader()
-    {
-        IWebElement heading = driver.FindElement(By.CssSelector(".HomePage_pageTitle__UAMbk"));
-        Assert.True(heading.Displayed);
-        Assert.AreEqual(heading.Text, "Welcome to TechGlobal School\nTraining");
+        [Test]
+        public void ValidateTGHeader()
+        {
+            IWebElement heading = driver.FindElement(By.CssSelector(".HomePage_pageTitle__UAMbk"));
+            Assert.True(heading.Displayed);
+            Assert.AreEqual(heading.Text, "Welcome to TechGlobal School\nTraining");
+        }
     }
 }
