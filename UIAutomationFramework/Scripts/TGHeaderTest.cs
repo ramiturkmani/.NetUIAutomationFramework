@@ -12,15 +12,14 @@ namespace UIAutomationFramework.Scripts
         public void ValidateTGLogo()
         {
             Thread.Sleep(1000);
-            Assert.True(logo.Displayed);
+            Assert.True(basePage.logo.Displayed);
         }
 
         [Test]
         public void ValidateTGHeader()
         {
-            IWebElement heading = driver.FindElement(By.CssSelector(".HomePage_pageTitle__UAMbk"));
-            Assert.True(heading.Displayed);
-            Assert.AreEqual(heading.Text, "Welcome to TechGlobal School\nTraining");
+            Assert.True(basePage.heading.Displayed);
+            Assert.AreEqual(basePage.heading.Text, "Welcome to TechGlobal School\nTraining");
         }
     }
 }

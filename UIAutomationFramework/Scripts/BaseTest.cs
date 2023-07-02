@@ -2,11 +2,13 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using UIAutomationFramework.EnvironmentConfiguration;
+using UIAutomationFramework.Pages;
 
 namespace UIAutomationFramework.Scripts
 {
     public class BaseTest : EnvirontmentSettings
     {
+        public BasePage basePage;
 
         [SetUp]
         public void Setup()
@@ -14,7 +16,9 @@ namespace UIAutomationFramework.Scripts
             driver = new ChromeDriver();
             driver.Manage().Window.Maximize();
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
+
             driver.Navigate().GoToUrl("https://techglobal-training.com/");
+            basePage = new BasePage();
         }
 
         [TearDown]
