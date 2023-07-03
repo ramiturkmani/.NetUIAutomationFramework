@@ -5,22 +5,20 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workbench ActiveDocument="UIAutomationFramework/Scripts/TGFooterTest.cs">
     <Files>
-      <File FileName="UIAutomationFramework/Pages/BasePage.cs" Line="8" Column="1" />
-      <File FileName="UIAutomationFramework/EnvironmentConfiguration/EnvirontmentSettings.cs" Line="6" Column="3" />
-      <File FileName="UIAutomationFramework/Scripts/TGFooterTest.cs" Line="7" Column="39" />
-      <File FileName="UIAutomationFramework/Scripts/TGHeaderTest.cs" Line="8" Column="34" />
-      <File FileName="UIAutomationFramework/Scripts/BaseTest.cs" Line="27" Column="2" />
+      <File FileName="UIAutomationFramework/Pages/BasePage.cs" Line="14" Column="26" />
+      <File FileName="UIAutomationFramework/EnvironmentConfiguration/EnvirontmentSettings.cs" Line="8" Column="34" />
+      <File FileName="UIAutomationFramework/Scripts/TGFooterTest.cs" Line="27" Column="2" />
+      <File FileName="UIAutomationFramework/Scripts/TGHeaderTest.cs" Line="18" Column="15" />
+      <File FileName="UIAutomationFramework/Scripts/BaseTest.cs" Line="21" Column="38" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="UIAutomationFramework">
-            <Node name="UIAutomationFramework">
+          <Node name="UIAutomationFramework" expanded="True">
+            <Node name="UIAutomationFramework" expanded="True">
               <Node name="EnvironmentConfiguration" expanded="True" />
               <Node name="Pages" expanded="True" />
-              <Node name="Scripts">
-                <Node name="TGFooterTest.cs" selected="True" />
-              </Node>
+              <Node name="Scripts" expanded="True" />
             </Node>
           </Node>
         </State>

@@ -6,7 +6,7 @@ using OpenQA.Selenium.Chrome;
 namespace UIAutomationFramework.Scripts
 {
     [TestFixture]
-    public class TGHeaderTests : BaseTest
+    public class TGHeaderTest : BaseTest
     {
         [Test]
         public void ValidateTGLogo()

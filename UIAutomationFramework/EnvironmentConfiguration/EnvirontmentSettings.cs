@@ -5,7 +5,7 @@ namespace UIAutomationFramework.EnvironmentConfiguration
 {
 	public class EnvirontmentSettings
 	{
-        public IWebDriver driver;
+        public static IWebDriver driver;
     }
 }
 

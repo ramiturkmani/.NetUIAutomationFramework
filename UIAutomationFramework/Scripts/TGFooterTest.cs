@@ -5,7 +5,7 @@ using OpenQA.Selenium.Chrome;
 namespace UIAutomationFramework.Scripts
 {
     [TestFixture]
-    public class TGFooterClass : BaseTest
+    public class TGFooterTest : BaseTest
     {
         [Test]
         public void ValidateTGFooter()
