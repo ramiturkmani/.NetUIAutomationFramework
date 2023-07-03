@@ -26,9 +26,11 @@
     <Folder Include="Scripts\" />
     <Folder Include="Pages\" />
     <Folder Include="EnvironmentConfiguration\" />
+    <Folder Include="Utils\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Pages\" />
     <None Remove="EnvironmentConfiguration\" />
+    <None Remove="Utils\" />
   </ItemGroup>
 </Project>

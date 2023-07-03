@@ -3,6 +3,7 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using UIAutomationFramework.EnvironmentConfiguration;
 using UIAutomationFramework.Pages;
+using UIAutomationFramework.Utils;
 
 namespace UIAutomationFramework.Scripts
 {
@@ -13,10 +14,7 @@ namespace UIAutomationFramework.Scripts
         [SetUp]
         public void Setup()
         {
-            driver = new ChromeDriver();
-            driver.Manage().Window.Maximize();
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
-
+            driver = Driver.GetDriver();
             driver.Navigate().GoToUrl("https://techglobal-training.com/");
             basePage = new BasePage();
         }
@@ -24,8 +22,7 @@ namespace UIAutomationFramework.Scripts
         [TearDown]
         public void TearDown()
         {
-            Thread.Sleep(3000); //3 Seconds
-            driver.Quit();
+            Driver.QuitDriver();
         }
     }
 }

@@ -8,4 +8,3 @@ namespace UIAutomationFramework.EnvironmentConfiguration
         public static IWebDriver driver;
     }
 }
-
