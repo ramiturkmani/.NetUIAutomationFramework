@@ -3,11 +3,34 @@ namespace UIAutomationFramework.Scripts
 {
 	public class MockInterviewTest : BaseTest
 	{
+		[SetUp]
+		public void SetPage()
+		{
+			mockInterviewsPage = new Pages.MockInterviewsPage();
+		}
+
 		[Test]
 		public void ValidateMockInterviewsLoginForm()
 		{
+			basePage.selectPracticesDropDownOption("Mock Interviews");
+
+			Assert.True(mockInterviewsPage.loginFormTitle.Displayed);
+			Assert.That(mockInterviewsPage.loginFormTitle.Text.Equals("Designed for TechGlobal Students"));
+
+            Assert.True(mockInterviewsPage.loginFormUserNameLabel.Displayed);
+            Assert.That(mockInterviewsPage.loginFormUserNameLabel.Text.Equals("Enter your username"));
+            Assert.True(mockInterviewsPage.loginFormUserNameInput.Displayed);
+            Assert.True(mockInterviewsPage.loginFormUserNameInput.Enabled);
 			
-		}
+            Assert.True(mockInterviewsPage.loginFormPasswordLabel.Displayed);
+            Assert.That(mockInterviewsPage.loginFormPasswordLabel.Text.Equals("Enter your password"));
+            Assert.True(mockInterviewsPage.loginFormPasswordInput.Displayed);
+            Assert.True(mockInterviewsPage.loginFormPasswordInput.Enabled);
+
+            Assert.True(mockInterviewsPage.loginFormLoginButton.Displayed);
+            Assert.True(mockInterviewsPage.loginFormLoginButton.Enabled);
+            Assert.That(mockInterviewsPage.loginFormLoginButton.Text.Equals("LOGIN"));
+        }
 	}
 }
 

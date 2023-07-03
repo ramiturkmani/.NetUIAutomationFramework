@@ -10,6 +10,7 @@ namespace UIAutomationFramework.Scripts
     public class BaseTest : EnvirontmentSettings
     {
         public BasePage basePage;
+        public MockInterviewsPage mockInterviewsPage;
 
         [SetUp]
         public void Setup()
