@@ -1,4 +1,5 @@
 ﻿using NUnit.Framework;
+
 namespace UIAutomationFramework.Scripts
 {
 	public class MockInterviewTest : BaseTest
@@ -7,13 +8,12 @@ namespace UIAutomationFramework.Scripts
 		public void SetPage()
 		{
 			mockInterviewsPage = new Pages.MockInterviewsPage();
+            basePage.selectPracticesDropDownOption("Mock Interviews");
 		}
 
 		[Test]
 		public void ValidateMockInterviewsLoginForm()
 		{
-			basePage.selectPracticesDropDownOption("Mock Interviews");
-
 			Assert.True(mockInterviewsPage.loginFormTitle.Displayed);
 			Assert.That(mockInterviewsPage.loginFormTitle.Text.Equals("Designed for TechGlobal Students"));
 
@@ -31,6 +31,18 @@ namespace UIAutomationFramework.Scripts
             Assert.True(mockInterviewsPage.loginFormLoginButton.Enabled);
             Assert.That(mockInterviewsPage.loginFormLoginButton.Text.Equals("LOGIN"));
         }
-	}
+
+        [Test]
+        public void ValidateMockInterviewsLoginFormWithInvalidCreds()
+        {
+            mockInterviewsPage.FillOutLoginForm();
+            mockInterviewsPage.loginFormLoginButton.Click();
+
+            Assert.True(mockInterviewsPage.loginFormErrorMessage.Displayed);
+            Assert.That(mockInterviewsPage.loginFormErrorMessage.Text.Equals("Email and password do not match!"), "ACTUAL = " + mockInterviewsPage.loginFormErrorMessage.Text);
+
+            Thread.Sleep(2000);
+        }
+    }
 }
 

@@ -6,12 +6,12 @@ using UIAutomationFramework.Utils;
 
 namespace UIAutomationFramework.Pages
 {
-	public class BasePage : EnvirontmentSettings
-	{
+    public class BasePage : EnvirontmentSettings
+    {
         //Header Elements
         public IWebElement logo => driver.FindElement(By.Id("logo"));
         public IWebElement heading => driver.FindElement(By.CssSelector(".HomePage_pageTitle__UAMbk"));
-        public IWebElement praticesDropDown = driver.FindElement(By.Id("dropdown-button"));
+        public IWebElement practicesDropDown = driver.FindElement(By.Id("dropdown-button"));
         public IList<IWebElement> practiceDropDownOptions => driver.FindElements(By.CssSelector("#dropdown-menu a"));
 
 
@@ -22,13 +22,13 @@ namespace UIAutomationFramework.Pages
 
         public void selectPracticesDropDownOption(string optionText)
         {
-            praticesDropDown.Click();
+            practicesDropDown.Click();
             ElementHandler.ClickListElement(practiceDropDownOptions, optionText);
         }
 
         public void selectPracticesDropDownOption(int index)
         {
-            praticesDropDown.Click();
+            practicesDropDown.Click();
             ElementHandler.ClickListElement(practiceDropDownOptions, index);
         }
     }
