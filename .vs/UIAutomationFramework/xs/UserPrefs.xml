@@ -1,24 +1,16 @@
 ﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{68C5CC06-3438-4227-A828-F702DF56A6B4}|Default">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="UIAutomationFramework/Scripts/TGFooterTest.cs">
-    <Files>
-      <File FileName="UIAutomationFramework/Pages/BasePage.cs" Line="14" Column="26" />
-      <File FileName="UIAutomationFramework/EnvironmentConfiguration/EnvirontmentSettings.cs" Line="8" Column="34" />
-      <File FileName="UIAutomationFramework/Scripts/TGFooterTest.cs" Line="27" Column="2" />
-      <File FileName="UIAutomationFramework/Scripts/TGHeaderTest.cs" Line="18" Column="15" />
-      <File FileName="UIAutomationFramework/Scripts/BaseTest.cs" Line="21" Column="38" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="UIAutomationFramework" expanded="True">
+          <Node name="UIAutomationFramework">
             <Node name="UIAutomationFramework" expanded="True">
               <Node name="EnvironmentConfiguration" expanded="True" />
-              <Node name="Pages" expanded="True" />
+              <Node name="Pages" expanded="True">
+                <Node name="BasePage.cs" selected="True" />
+              </Node>
               <Node name="Scripts" expanded="True" />
+              <Node name="Utils" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -30,7 +22,11 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.UIAutomationFramework PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.UIAutomationFramework PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>
